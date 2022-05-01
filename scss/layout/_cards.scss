@@ -1,0 +1,97 @@
+/*Inicio de formato cards de home */
+
+/* GRID RESPONSIVE CARDS */
+.cont-bestsell {
+	width: 100%;
+	max-width: 1200px;
+	height: 250px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+	nav {
+		ul {
+			display: grid;
+			grid-gap: 1rem;
+			grid-auto-rows: 22rem;
+			grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+		}
+	}
+}
+
+.card {
+	width: 230px;
+	height: 250px;
+	border-radius: 8px;
+	box-shadow: 1px 1px 2px 2px $card;
+	background-color: $background;
+	overflow: hidden;
+	margin: 30px;
+	text-align: center;
+	transition: all 0.30s;
+	&:hover {
+		transform: translateY(-13px);
+		box-shadow: 15px 16px 16px $card;
+	}
+	img {
+		width: 200px;
+		height: 200px;
+	}
+	h3 {
+        font-family: $font-2;
+		color: $letra-normal;
+		font-weight: 600;
+	}
+}
+
+/*Fin de formato cards de home */
+
+
+
+/*Inicio de formato cards de tienda*/
+
+/* GRID RESPONSIVE CARDS */
+.container-tienda{
+	width: 100%;
+	max-width: 1200px;
+	height: 250px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+	nav {
+		ul {
+			display: grid;
+			grid-gap: 1rem;
+			grid-auto-rows: 22rem;
+			grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+		}
+	}
+}
+
+.card-tienda{
+	width: 250px;
+	height: 330px;
+	background-color: $background;
+	overflow: hidden;
+	margin: 30px;
+	text-align: center;
+	border-radius: 8px;
+	box-shadow: 1px 1px 2px 2px $card;
+
+	img {
+		width: 230px;
+		height: 230px;
+	}
+	h3 {
+        font-family: $font-2;
+		color: $letra-normal;
+		font-weight: 600;
+		margin-bottom: 25px;
+	}
+	a{  
+		@extend %boton-comprar;
+	}
+}
+
+/*Fin de formato cards de tienda*/

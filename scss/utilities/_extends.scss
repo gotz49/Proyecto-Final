@@ -1,0 +1,47 @@
+
+
+// input para rellenar reutilizable
+%input{
+    margin: 5px;
+    padding: 5px;
+    background-color:$background;
+    width: 400px;
+    height: 40px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: $font-2;
+    font-size: 15px;
+}
+
+
+//boton importante reutilizable
+%boton-importante{
+    margin: 5px;
+    padding: 5px;
+    background-color: $llamativo;
+    border-style: solid;
+    border-width: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: $font-2;
+}
+
+%boton-comprar{
+    margin: 5px;
+    padding: 6px;
+    background-color: $background;
+    border-style: solid;
+    border-width: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: $font-2;
+    color: $letra-normal;
+    &:hover{
+        transition: 0.45s;
+        background-color: $llamativo;
+        color: $background;
+        border: 1px solid black;
+    }
+}

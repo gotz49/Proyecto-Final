@@ -1,0 +1,185 @@
+// import de utilities
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "utilities/extends";
+
+// import de layouts
+@import "layout/menu";
+@import "layout/cards";
+@import "layout/mediaqueries";
+
+//import de views
+@import "views/tienda";
+
+body{
+    background-color: $background;
+}
+
+/* Inicio de Presentacion */
+
+.presentacion{
+    background-color: $background;
+    background-image: url(../img/home/fondoindex.jpeg);
+    padding: 400px 100px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    p{
+        margin: 3px;
+        text-align: center;
+        position: relative;
+        font-family: $font-2;
+        color: $letra-fuerte;
+        font-weight: 550;
+    }
+    h1{
+        position: relative;
+        margin: 10px;
+        text-align: center;
+        font-family: $font-2;
+        color: $letra-fuerte;
+    }
+    a{
+        position: relative;
+        padding: 15px;
+        font-weight: 650;
+        text-decoration: none;
+        font-size: 11px;
+        font-family: $font-2;
+        background-color: $letra-normal;
+        color: $background;
+        &:hover{
+            transition: 0.45s;
+            background-color: $llamativo;
+            color: $background;
+        }
+    }
+}
+/* Fin de Presentacion */
+
+
+/*Inicio de Compras Populares*/
+.bestsellers{
+    background-color: $background;
+    p{
+        background-color: $background;
+        font-family: $font-2;
+        color: $letra-normal;
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    h2{
+        background-color: $background;
+        font-family: $font-2;
+        color: $letra-normal;
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+}
+// las Cards de Productos, estan en "menu.scss"
+
+/*Fin de Compras Populares*/
+
+
+/*Inicio de Newsletter*/
+.newsletter{
+    margin-top: 120px;
+    img{
+        float: left;
+        width: 100%;
+        max-width: 1000px;
+        height: auto;
+    }
+    form{
+        height: 1000px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        p{
+            color: $letra-normal;
+            font-family: $font-1;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+        .email{
+            @extend %input;
+        }
+        .subscripcion{
+            @extend %boton-importante;
+            width: 400px;
+            height: 40px;
+            &:hover{
+                transition: 0.45s;
+                background-color: black;
+                color: $letra-fuerte;
+            }
+        }
+    }
+}
+/*Fin de Newsletter*/
+
+
+/*Inicio del Footer*/
+.footer{
+    height: 15%;
+    
+    .linea{
+        width: 100%;
+        height: 1px;
+        background-color: $card;
+        margin-bottom: 25px;
+        margin-top: 50px;
+    }
+
+    .volver{
+        @include flex;
+        text-decoration: none;
+        font-family: $font-1;
+        font-size: 11px;
+        color: $letra-normal;
+        font-weight: 500;
+        &:hover {
+            color: $hover;
+            transition: 0.25s;
+        }
+    }
+    
+    .redes{
+        h3{
+            margin: 10px;
+            text-align: center;
+            font-family: $font-1;
+            font-size: 15px;
+            color: $letra-normal;
+            font-weight: 400;
+        }
+        nav{
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                li{
+                    margin-left: 15px;
+                    margin-right: 15px;
+                }
+            }
+            
+        }
+    }
+    .derechos{
+        p{
+            text-align: center;
+            font-family: $font-1;
+            font-size: 15px;
+            color: $letra-normal;
+            font-weight: 400;
+            margin: 5px;
+        }
+    }
+}
+/*Fin del Footer*/

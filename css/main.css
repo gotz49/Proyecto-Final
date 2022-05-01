@@ -1,0 +1,360 @@
+.newsletter form .email {
+  margin: 5px;
+  padding: 5px;
+  background-color: black;
+  width: 400px;
+  height: 40px;
+  border-style: solid;
+  border-width: 1px;
+  font-family: "Montaga", serif;
+  font-size: 15px; }
+
+.newsletter form .subscripcion {
+  margin: 5px;
+  padding: 5px;
+  background-color: #fec400;
+  border-style: solid;
+  border-width: 1px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Montaga", serif; }
+
+.card-tienda a {
+  margin: 5px;
+  padding: 6px;
+  background-color: black;
+  border-style: solid;
+  border-width: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Montaga", serif;
+  color: rgba(240, 248, 255, 0.842); }
+  .card-tienda a:hover {
+    transition: 0.45s;
+    background-color: #fec400;
+    color: black;
+    border: 1px solid black; }
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box; }
+
+header {
+  font-family: "Gentium Basic", serif;
+  width: 100%;
+  height: 100px;
+  background-color: black; }
+
+.menu {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .menu .logo {
+    width: 140px;
+    margin-left: 20px; }
+  .menu .navbar {
+    font-size: 30px;
+    color: rgba(240, 248, 255, 0.842);
+    margin-right: 20px;
+    cursor: pointer; }
+
+.nav-menu {
+  position: fixed;
+  width: 100%;
+  top: 100px;
+  background: rgba(0, 0, 0, 0.95);
+  text-align: center;
+  transition: all 0.5s; }
+  .nav-menu li {
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all 0.5s; }
+    .nav-menu li a {
+      color: white;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 600; }
+      .nav-menu li a:hover {
+        color: rgba(138, 138, 138, 0.842);
+        transition: 0.25s; }
+    .nav-menu li a.active {
+      color: rgba(138, 138, 138, 0.842);
+      transition: 0.25s; }
+
+#check {
+  display: none; }
+  #check:checked ~ .nav-menu {
+    position: absolute;
+    z-index: 1;
+    height: 100vh; }
+    #check:checked ~ .nav-menu li {
+      display: block; }
+
+/* DESKTOP RESPONSIVE */
+@media screen and (min-width: 760px) {
+  .logo {
+    margin-left: 50px; }
+  nav {
+    height: 100px; }
+  .navbar {
+    display: none; }
+  .nav-menu {
+    position: relative;
+    height: 100px;
+    top: 0;
+    background: none;
+    transition: none;
+    text-align: right;
+    margin-right: 50px; }
+    .nav-menu li {
+      display: inline-block;
+      line-height: 100px;
+      margin: 0 20px;
+      transition: none; }
+      .nav-menu li a {
+        font-size: 12px;
+        margin-bottom: 30px; } }
+
+/*Inicio de formato cards de home */
+/* GRID RESPONSIVE CARDS */
+.cont-bestsell {
+  width: 100%;
+  max-width: 1200px;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto; }
+  .cont-bestsell nav ul {
+    display: grid;
+    grid-gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); }
+
+.card {
+  width: 230px;
+  height: 250px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px 2px #303030;
+  background-color: black;
+  overflow: hidden;
+  margin: 30px;
+  text-align: center;
+  transition: all 0.30s; }
+  .card:hover {
+    transform: translateY(-13px);
+    box-shadow: 15px 16px 16px #303030; }
+  .card img {
+    width: 200px;
+    height: 200px; }
+  .card h3 {
+    font-family: "Montaga", serif;
+    color: rgba(240, 248, 255, 0.842);
+    font-weight: 600; }
+
+/*Fin de formato cards de home */
+/*Inicio de formato cards de tienda*/
+/* GRID RESPONSIVE CARDS */
+.container-tienda {
+  width: 100%;
+  max-width: 1200px;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto; }
+  .container-tienda nav ul {
+    display: grid;
+    grid-gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); }
+
+.card-tienda {
+  width: 250px;
+  height: 330px;
+  background-color: black;
+  overflow: hidden;
+  margin: 30px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px 2px #303030; }
+  .card-tienda img {
+    width: 230px;
+    height: 230px; }
+  .card-tienda h3 {
+    font-family: "Montaga", serif;
+    color: rgba(240, 248, 255, 0.842);
+    font-weight: 600;
+    margin-bottom: 25px; }
+
+/*Fin de formato cards de tienda*/
+/* Inicio --- Media Querie de la seccion Newsletter en Home*/
+@media only screen and (max-width: 1420px) {
+  .newsletter img {
+    display: none; }
+  .newsletter form {
+    height: 300px;
+    width: auto; } }
+
+@media only screen and (max-width: 590px) {
+  .newsletter {
+    height: 1500px; }
+    .newsletter img {
+      display: none; }
+    .newsletter form {
+      position: relative;
+      transform: translateY(650px); } }
+
+/* FIN --- Media Querie de la seccion Newsletter en Home*/
+/* Inicio del estilo de TIENDA */
+.tienda h1 {
+  color: rgba(240, 248, 255, 0.842);
+  font-family: "Montaga", serif;
+  text-align: center;
+  margin-top: 15px; }
+
+.tienda .container-tienda {
+  height: 85%;
+  width: auto; }
+
+body {
+  background-color: black; }
+
+/* Inicio de Presentacion */
+.presentacion {
+  background-color: black;
+  background-image: url(../img/home/fondoindex.jpeg);
+  padding: 400px 100px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center; }
+  .presentacion p {
+    margin: 3px;
+    text-align: center;
+    position: relative;
+    font-family: "Montaga", serif;
+    color: white;
+    font-weight: 550; }
+  .presentacion h1 {
+    position: relative;
+    margin: 10px;
+    text-align: center;
+    font-family: "Montaga", serif;
+    color: white; }
+  .presentacion a {
+    position: relative;
+    padding: 15px;
+    font-weight: 650;
+    text-decoration: none;
+    font-size: 11px;
+    font-family: "Montaga", serif;
+    background-color: rgba(240, 248, 255, 0.842);
+    color: black; }
+    .presentacion a:hover {
+      transition: 0.45s;
+      background-color: #fec400;
+      color: black; }
+
+/* Fin de Presentacion */
+/*Inicio de Compras Populares*/
+.bestsellers {
+  background-color: black; }
+  .bestsellers p {
+    background-color: black;
+    font-family: "Montaga", serif;
+    color: rgba(240, 248, 255, 0.842);
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 5px; }
+  .bestsellers h2 {
+    background-color: black;
+    font-family: "Montaga", serif;
+    color: rgba(240, 248, 255, 0.842);
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 45px; }
+
+/*Fin de Compras Populares*/
+/*Inicio de Newsletter*/
+.newsletter {
+  margin-top: 120px; }
+  .newsletter img {
+    float: left;
+    width: 100%;
+    max-width: 1000px;
+    height: auto; }
+  .newsletter form {
+    height: 1000px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+    .newsletter form p {
+      color: rgba(240, 248, 255, 0.842);
+      font-family: "Gentium Basic", serif;
+      font-size: 25px;
+      margin-bottom: 10px; }
+    .newsletter form .subscripcion {
+      width: 400px;
+      height: 40px; }
+      .newsletter form .subscripcion:hover {
+        transition: 0.45s;
+        background-color: black;
+        color: white; }
+
+/*Fin de Newsletter*/
+/*Inicio del Footer*/
+.footer {
+  height: 15%; }
+  .footer .linea {
+    width: 100%;
+    height: 1px;
+    background-color: #303030;
+    margin-bottom: 25px;
+    margin-top: 50px; }
+  .footer .volver {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Gentium Basic", serif;
+    font-size: 11px;
+    color: rgba(240, 248, 255, 0.842);
+    font-weight: 500; }
+    .footer .volver:hover {
+      color: rgba(138, 138, 138, 0.842);
+      transition: 0.25s; }
+  .footer .redes h3 {
+    margin: 10px;
+    text-align: center;
+    font-family: "Gentium Basic", serif;
+    font-size: 15px;
+    color: rgba(240, 248, 255, 0.842);
+    font-weight: 400; }
+  .footer .redes nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
+    .footer .redes nav ul li {
+      margin-left: 15px;
+      margin-right: 15px; }
+  .footer .derechos p {
+    text-align: center;
+    font-family: "Gentium Basic", serif;
+    font-size: 15px;
+    color: rgba(240, 248, 255, 0.842);
+    font-weight: 400;
+    margin: 5px; }
+
+/*Fin del Footer*/

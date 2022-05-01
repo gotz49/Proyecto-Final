@@ -1,0 +1,7 @@
+//flex utilizado para los input
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,27 @@
+
+/* Inicio --- Media Querie de la seccion Newsletter en Home*/
+@media only screen and (max-width: 1420px) {
+    .newsletter{
+        img{
+            display: none;
+        }
+        form{
+            height: 300px;
+            width: auto;
+        }
+    }
+}
+@media only screen and (max-width: 590px) {
+    .newsletter{
+        height: 1500px;
+        img{
+            display: none;
+        }
+        form{
+            position: relative;
+            transform: translateY(650px);
+        }
+    }
+}
+
+/* FIN --- Media Querie de la seccion Newsletter en Home*/
