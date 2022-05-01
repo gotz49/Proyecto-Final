@@ -13,15 +13,34 @@
 }
 @media only screen and (max-width: 590px) {
     .newsletter{
-        height: 1500px;
+        height: auto;
+        width: auto;
+        text-align: center;
         img{
             display: none;
         }
         form{
-            position: relative;
-            transform: translateY(650px);
+            p{
+                width: 75%;
+            }
+            .email{
+                width: 300px;
+            }
+            .subscripcion{
+                width: 75%;
+            }
         }
     }
 }
 
 /* FIN --- Media Querie de la seccion Newsletter en Home*/
+
+
+
+/* INICIO --- Media Querie de la seccion Bestseller*/
+@media only screen and (max-width: 590px){
+    .cont-bestsell{
+        height: 2000px;
+    }
+}
+/* FIN --- Media Querie de la seccion Bestseller*/

@@ -81,7 +81,8 @@ header {
       color: white;
       font-size: 16px;
       text-transform: uppercase;
-      font-weight: 600; }
+      font-weight: 600;
+      text-decoration: none; }
       .nav-menu li a:hover {
         color: rgba(138, 138, 138, 0.842);
         transition: 0.25s; }
@@ -206,14 +207,25 @@ header {
 
 @media only screen and (max-width: 590px) {
   .newsletter {
-    height: 1500px; }
+    height: auto;
+    width: auto;
+    text-align: center; }
     .newsletter img {
       display: none; }
-    .newsletter form {
-      position: relative;
-      transform: translateY(650px); } }
+    .newsletter form p {
+      width: 75%; }
+    .newsletter form .email {
+      width: 300px; }
+    .newsletter form .subscripcion {
+      width: 75%; } }
 
 /* FIN --- Media Querie de la seccion Newsletter en Home*/
+/* INICIO --- Media Querie de la seccion Bestseller*/
+@media only screen and (max-width: 590px) {
+  .cont-bestsell {
+    height: 2000px; } }
+
+/* FIN --- Media Querie de la seccion Bestseller*/
 /* Inicio del estilo de TIENDA */
 .tienda h1 {
   color: rgba(240, 248, 255, 0.842);
@@ -224,6 +236,28 @@ header {
 .tienda .container-tienda {
   height: 85%;
   width: auto; }
+
+/* Inicio de estilos para el view de Lookbook */
+.text-lookbook {
+  height: 350px; }
+  .text-lookbook h1 {
+    color: rgba(240, 248, 255, 0.842);
+    font-family: "Montaga", serif;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 25px; }
+  .text-lookbook h2 {
+    color: rgba(240, 248, 255, 0.842);
+    font-family: "Montaga", serif;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 25px; }
+  .text-lookbook p {
+    color: rgba(240, 248, 255, 0.842);
+    font-family: "Montaga", serif;
+    text-align: center;
+    font-size: 17px;
+    margin: 5px; }
 
 body {
   background-color: black; }
@@ -304,8 +338,12 @@ body {
       font-size: 25px;
       margin-bottom: 10px; }
     .newsletter form .subscripcion {
-      width: 400px;
-      height: 40px; }
+      width: 300px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center; }
       .newsletter form .subscripcion:hover {
         transition: 0.45s;
         background-color: black;

@@ -2,6 +2,7 @@
 @import "utilities/variables";
 @import "utilities/mixins";
 @import "utilities/extends";
+@import "utilities/maps";
 
 // import de layouts
 @import "layout/menu";
@@ -10,6 +11,7 @@
 
 //import de views
 @import "views/tienda";
+@import "views/lookbook";
 
 body{
     background-color: $background;
@@ -95,10 +97,7 @@ body{
     form{
         height: 1000px;
         width: auto;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+        @include flex;
         p{
             color: $letra-normal;
             font-family: $font-1;
@@ -110,8 +109,9 @@ body{
         }
         .subscripcion{
             @extend %boton-importante;
-            width: 400px;
+            width: 300px;
             height: 40px;
+            @include flex;
             &:hover{
                 transition: 0.45s;
                 background-color: black;

@@ -5,3 +5,11 @@
     flex-direction: column;
     align-items: center;
 }
+
+
+// mixin con las propiedades de fuente principalmente utilizado en la web
+// el mismo esta hecho con mapas desde "maps.scss"
+@mixin font-basic{
+    color: map-get($map: $letra-basic, $key:color );
+	font-family: map-get($map: $letra-basic, $key:style );
+}
