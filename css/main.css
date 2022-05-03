@@ -226,6 +226,14 @@ header {
     height: 2000px; } }
 
 /* FIN --- Media Querie de la seccion Bestseller*/
+/* INICIO --- Media Querie de la seccion Iniciar sesion*/
+@media only screen and (max-width: 450px) {
+  .iniciar-sesion form {
+    width: 300px;
+    height: 400px; }
+    .iniciar-sesion form .email {
+      width: 75%; } }
+
 /* Inicio del estilo de TIENDA */
 .tienda h1 {
   color: rgba(240, 248, 255, 0.842);
@@ -259,6 +267,145 @@ header {
     font-size: 17px;
     margin: 5px; }
 
+/* Inicio de estilos para la view Iniciar Sesion*/
+.iniciar-sesion form {
+  width: 360px;
+  height: 440px;
+  background: black;
+  margin: calc(50vh - 220px) auto;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: "Montaga", serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center; }
+  .iniciar-sesion form h1 {
+    color: white;
+    font-family: "Montaga", serif;
+    text-align: center;
+    margin-bottom: 10px; }
+  .iniciar-sesion form p {
+    color: white;
+    font-family: "Montaga", serif;
+    text-align: center;
+    margin-bottom: 10px; }
+  .iniciar-sesion form .email {
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: black;
+    resize: none;
+    font-family: "Montaga", serif;
+    border: 1px solid rgba(240, 248, 255, 0.842); }
+  .iniciar-sesion form .password {
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: black;
+    resize: none;
+    font-family: "Montaga", serif;
+    border: 1px solid rgba(240, 248, 255, 0.842); }
+  .iniciar-sesion form .iniciar-boton {
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #fec400;
+    resize: none;
+    font-family: "Gentium Basic", serif;
+    text-transform: uppercase;
+    border: 1px solid black; }
+    .iniciar-sesion form .iniciar-boton:hover {
+      background-color: black;
+      color: white;
+      border: 1px solid white; }
+  .iniciar-sesion form .link-registro {
+    text-decoration: none;
+    color: white;
+    font-family: "Montaga", serif;
+    text-align: center; }
+    .iniciar-sesion form .link-registro:hover {
+      color: rgba(138, 138, 138, 0.842); }
+
+/* Fin de estilos para la view Iniciar Sesion*/
+/* Inicio de estilos para la view Registrarse*/
+.registrarse form {
+  width: 360px;
+  height: 440px;
+  background: black;
+  margin: calc(50vh - 220px) auto;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: "Montaga", serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center; }
+  .registrarse form h1 {
+    color: white;
+    font-family: "Montaga", serif;
+    text-align: center;
+    margin-bottom: 10px; }
+  .registrarse form p {
+    color: white;
+    font-family: "Montaga", serif;
+    text-align: center;
+    margin-bottom: 10px; }
+  .registrarse form .nombre {
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: black;
+    resize: none;
+    font-family: "Montaga", serif;
+    border: 1px solid rgba(240, 248, 255, 0.842); }
+  .registrarse form .email {
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: black;
+    resize: none;
+    font-family: "Montaga", serif;
+    border: 1px solid rgba(240, 248, 255, 0.842); }
+  .registrarse form .password {
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: black;
+    resize: none;
+    font-family: "Montaga", serif;
+    border: 1px solid rgba(240, 248, 255, 0.842); }
+  .registrarse form .registro-boton {
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #fec400;
+    resize: none;
+    font-family: "Gentium Basic", serif;
+    text-transform: uppercase;
+    border: 1px solid black; }
+    .registrarse form .registro-boton:hover {
+      background-color: black;
+      color: white;
+      border: 1px solid white; }
+  .registrarse form .link-iniciar {
+    text-decoration: none;
+    color: white;
+    font-family: "Montaga", serif;
+    text-align: center; }
+    .registrarse form .link-iniciar:hover {
+      color: rgba(138, 138, 138, 0.842); }
+
+/* Fin de estilos para la view Iniciar Sesion*/
 body {
   background-color: black; }
 

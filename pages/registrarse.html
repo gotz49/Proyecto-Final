@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <!-- link de css-->
     <link rel="stylesheet" href="../css/main.css">
     
@@ -13,12 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic&family=Montaga&display=swap" rel="stylesheet">
     
-    <title>Outlaw Amsterdam - Iniciar Sesion</title>
+    <title>Outlaw Amsterdam - Registrarse</title>
     
     <!-- Descripction and Keywords-->
     <meta name="description" content="Bienvenido a Outlaws Amsterdam. El lugar donde el estilo se encuentra con tu Outlaw interior. Echa un vistazo a nuestros últimos anillos y sé parte del club. Envíos a todo el mundo.">
     <meta name="keywords" content="ANILLOS, PLATA, ESTILO, JOYERIA, ENVIO INTERNACIONAL, FORAJIDO,">
-    
 </head>
 <body>
     
@@ -39,21 +37,24 @@
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../pages/tienda.html">Tienda</a></li>
                 <li><a href="../pages/lookbook.html">Lookbook</a></li>
-                <li><a class="active" href="../pages/iniciarsesion.html">Iniciar Sesion</a></li>
-                <li><a href="../pages/registrarse.html">Registrarse</a></li>
+                <li><a href="../pages/iniciarsesion.html">Iniciar Sesion</a></li>
+                <li><a class="active" href="../pages/registrarse.html">Registrarse</a></li>
             </ul>
         </nav>
     </header>
     
     <!-- CONTENIDO DE LA PAGINA -->
-    <main class="iniciar-sesion">
+    <main class="registrarse">
         
         <form action="">
         
-            <h1>INICIAR SESIÓN</h1>
+            <h1>REGISTRARSE</h1>
             <p>
-                Por favor, introduzca su correo electrónico y contraseña:
+                Por favor, introduzca los datos para formar parte
             </p>
+            
+            <!-- nombre completo -->
+            <input type="text" name="nombre" placeholder="Nombre completo" class="nombre" style="width: 400px;">
             
             <!--email-->
             <input type="email" name="Email" placeholder="Email" class="email" style="width: 400px;">
@@ -62,14 +63,15 @@
             <input type="password" name="password" placeholder="Contraseña" class="password" style="width: 400px;">
             
             <!--boton para inciar sesion-->
-            <input type="submit" value="Iniciar sesión" class="iniciar-boton"
+            <input type="submit" value="Registrarse" class="registro-boton"
                 style="width: 400px;">
                 
             <!--atajo para crear cuenta nueva si no tiene usuario-->
-            <a href="../pages/registrarse.html" class="link-registro">
-                ¿No tienes una cuenta? Crea una
+            <a href="../pages/iniciarsesion.html" class="link-iniciar">
+                ¿Ya tienes cuenta? Inicia sesion
             </a> 
         </form>
+        
     </main>
     
     
@@ -114,7 +116,6 @@
         </div>
         
     </div>
-    
     
 </body>
 </html>
