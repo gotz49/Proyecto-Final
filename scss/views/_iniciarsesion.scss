@@ -1,7 +1,7 @@
 /* Inicio de estilos para la view Iniciar Sesion*/
 .iniciar-sesion{
     form{
-        width: 360px;
+        width: 600px;
         height: 440px;
         background: black;
         margin: calc(50vh - 220px) auto;
@@ -25,6 +25,9 @@
             font-family: $font-2;
             text-align: center;
             margin-bottom: 10px;
+        }
+        input{
+            width: 350px;
         }
         .email{
             height: 40px;

@@ -226,14 +226,6 @@ header {
     height: 2000px; } }
 
 /* FIN --- Media Querie de la seccion Bestseller*/
-/* INICIO --- Media Querie de la seccion Iniciar sesion*/
-@media only screen and (max-width: 450px) {
-  .iniciar-sesion form {
-    width: 300px;
-    height: 400px; }
-    .iniciar-sesion form .email {
-      width: 75%; } }
-
 /* Inicio del estilo de TIENDA */
 .tienda h1 {
   color: rgba(240, 248, 255, 0.842);
@@ -269,7 +261,7 @@ header {
 
 /* Inicio de estilos para la view Iniciar Sesion*/
 .iniciar-sesion form {
-  width: 360px;
+  width: 600px;
   height: 440px;
   background: black;
   margin: calc(50vh - 220px) auto;
@@ -291,6 +283,8 @@ header {
     font-family: "Montaga", serif;
     text-align: center;
     margin-bottom: 10px; }
+  .iniciar-sesion form input {
+    width: 350px; }
   .iniciar-sesion form .email {
     height: 40px;
     padding: 10px;
@@ -334,7 +328,7 @@ header {
 /* Fin de estilos para la view Iniciar Sesion*/
 /* Inicio de estilos para la view Registrarse*/
 .registrarse form {
-  width: 360px;
+  width: 600px;
   height: 440px;
   background: black;
   margin: calc(50vh - 220px) auto;
@@ -356,6 +350,8 @@ header {
     font-family: "Montaga", serif;
     text-align: center;
     margin-bottom: 10px; }
+  .registrarse form input {
+    width: 350px; }
   .registrarse form .nombre {
     height: 40px;
     padding: 10px;
